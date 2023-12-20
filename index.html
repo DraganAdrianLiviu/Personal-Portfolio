@@ -9,12 +9,21 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/color_1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="style/color_1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="style/color_2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="style/color_3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="style/color_4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="style/color_5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="style/style-switcher.css">
 
     <!-- Google Fonts -->
     <link href="@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;700&display=swap');">
 
     <!-- JS Files -->
     <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
     <title>Personal Portfolio</title>
 
 </head>
@@ -460,6 +469,25 @@
 
     </div>
     <!-- Main Container End -->
+    
+    <!-- Style Switcher Start -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas fa-moon"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- Style Switcher End -->
 
 
 </body>
